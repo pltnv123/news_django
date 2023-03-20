@@ -1,0 +1,25 @@
+<!--  наследуемся от шаблона default.html, который мы создавали для flatpages -->
+{% extends 'flatpages/default.html' %}
+
+<!--  подключаю свои фильтры -->
+
+{% load custom_filters %}!
+
+
+<!-- Название у нас будет Product -->
+{% block title %}
+New
+{% endblock title %}
+
+<!-- В контенте на странице мы выводим сам товар, идентификатор которого был передан в url -->
+{% block content %}
+
+<h3>{{ new.dateCreation|date:'d M Y' }}</h3>
+<hr>
+<h5>{{ new.author }}</h5>
+<h1>{{ new.title|filter_message }}</h1>
+<h4>{{ new.text }}</h4>
+
+<hr>
+<h6><a href="{% url 'start_new' %}"> На главную! </a></h6>
+{% endblock content %}

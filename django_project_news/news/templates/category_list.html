@@ -1,0 +1,96 @@
+{% extends 'flatpages/default.html' %}
+
+{% load custom_filters %}
+{# Импортируем модуль с нашим тегом #}
+{% load custom_tags %}
+
+{% block title %}
+Post
+{% endblock title %}
+
+{% block content %}
+   <h1 class="text-center">Новостная лента <span class="text-muted fs-6 fw-normal">Всего: {{ page_obj.paginator.count }}</span></h1>
+   <hr>
+
+    {% if is_not_subscriber %}
+    <p class="text-center"><a href="{% url 'subscribe' category.id %}" class="btn btn-secondary btn-sm">Подписаться</a></p>
+    {% else %}
+    <p class="text-center"><a href="{% url 'unsubscribe' category.id %}" class="btn btn-secondary btn-sm">Отписаться</a></p>
+    {% endif %}
+
+
+   {% if perms.appnews.add_post %}
+   <a href="{% url 'post_create' %}">Добавить Пост</a>
+   {% endif %}
+
+   {% if category_news_list %}
+       <table>
+           <tr>
+
+               <td>Заголовок</td>
+               <td>Дата публикации</td>
+               <td>Описание</td>
+               <td>Категории</td>
+
+
+               {% if perms.simpleapp.change_news or perms.simpleapp.delete_news %}
+                <td>Действия</td>
+                {% endif %}
+
+           </tr>
+
+           {% for i in category_news_list %}
+           <tr>
+
+               <td>{{ i.title }}</td>
+               <td>{{ i.dateCreation }}</td>
+               <td>{{ i.text|truncatechars:15 }}</td>
+
+<!--               <td>{{ i.post_Category.get.category_name }}</td>        хз не работает-->
+
+               <td>
+                   {% for postCategory in i.postCategory.all %}
+                    <a href="{% url 'category_list' category.id %}"> {{ category }}</a>
+                   {% endfor %}
+               </td>
+
+
+               <td>
+                    {# А здесь доступ для каждой ссылки теперь будем проверять отдельно #}
+                    {% if perms.appnews.change_post %}
+                    <a href="{% url 'post_update' pk=i.id %}">Изменить</a>
+                    {% endif %}
+                    {% if perms.appnews.delete_post %}
+                    <a href="{% url 'post_delete' pk=i.id %}">Удалить</a>
+                    {% endif %}
+                </td>
+
+           </tr>
+
+           {% endfor %}
+
+       </table>
+ <hr>
+   {% else %}
+       <h2>Товаров нет!</h2>
+   {% endif %}
+{% if page_obj.has_previous %}
+       {# Для каждой ссылки пагинации указываем обработку через новый тег #}
+       <a href="?{% url_replace page=1 %}">1</a>
+       {% if page_obj.previous_page_number != 1 %}
+           ...
+           <a href="?{% url_replace page=page_obj.previous_page_number %}">{{ page_obj.previous_page_number }}</a>
+       {% endif %}
+   {% endif %}
+
+   {{ page_obj.number }}
+
+   {% if page_obj.has_next %}
+       <a href="?{% url_replace page=page_obj.next_page_number %}">{{ page_obj.next_page_number }}</a>
+       {% if paginator.num_pages != page_obj.next_page_number %}
+           ...
+           <a href="?{% url_replace page=page_obj.paginator.num_pages %}">{{ page_obj.paginator.num_pages }}</a>
+       {% endif %}
+   {% endif %}
+<h6><a href="{% url 'start_new' %}"> На главную! </a></h6>
+{% endblock content %}
