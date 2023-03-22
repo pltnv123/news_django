@@ -27,15 +27,15 @@ def my_job():
             'posts': posts,
         }
     )
-
-    msg = EmailMultiAlternatives(
-        subject='Статьи за неделю',
-        body='',
-        from_email=settings.DEFAULT_FROM_EMAIL,
-        to=subscribers
-    )
-    msg.attach_alternative(html_content, 'text/html')
-    msg.send()
+    for email in subscribers:
+        msg = EmailMultiAlternatives(
+            subject='Статьи за неделю',
+            body='',
+            from_email=settings.DEFAULT_FROM_EMAIL,
+            to=[email],
+        )
+        msg.attach_alternative(html_content, 'text/html')
+        msg.send()
 
 
 # def my_job():
@@ -55,8 +55,7 @@ class Command(BaseCommand):
 
         scheduler.add_job(
             my_job,
-            # trigger=CronTrigger(minute="20", hour="10"),
-            trigger=CronTrigger(),
+            trigger=CronTrigger(second="*/10"), # нужно поставить на РАЗ В НЕДЕЛЮ
             id="my_job",  # The `id` assigned to each job MUST be unique
             max_instances=1,
             replace_existing=True,

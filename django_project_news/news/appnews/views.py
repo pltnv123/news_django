@@ -1,6 +1,7 @@
 from django.contrib.auth.models import Group
 from django.core.mail import EmailMultiAlternatives
 from django.shortcuts import render, get_object_or_404, redirect
+from django.views import View
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
 from django.http import HttpResponse
@@ -12,6 +13,7 @@ from .models import *
 from datetime import datetime
 from django.contrib.auth.mixins import PermissionRequiredMixin, LoginRequiredMixin
 from django.contrib.auth.decorators import login_required
+from .tasks import *
 
 
 class PostNewsList(ListView):
@@ -173,3 +175,8 @@ def upgrade_user(request):
         group.user_set.add(user)
         Author.objects.create(authorUser=user)
     return redirect('/news')
+
+
+# class IndexView(View):
+#     def get(self, request):
+#         return HttpResponse('Hello!')
