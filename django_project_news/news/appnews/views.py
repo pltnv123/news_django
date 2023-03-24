@@ -177,6 +177,3 @@ def upgrade_user(request):
     return redirect('/news')
 
 
-# class IndexView(View):
-#     def get(self, request):
-#         return HttpResponse('Hello!')
