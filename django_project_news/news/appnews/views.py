@@ -1,4 +1,5 @@
 from django.contrib.auth.models import Group
+from django.core.cache import cache
 from django.core.mail import EmailMultiAlternatives
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views import View
@@ -91,8 +92,18 @@ class PostUpdate(PermissionRequiredMixin, UpdateView):
     form_class = PostForm
     model = Post
     template_name = 'post_edit.html'
-    success_url = reverse_lazy('post_update')
+    # success_url = reverse_lazy('post_update')
 
+    def get_object(self, *args, **kwargs):
+        obj = cache.get(f'post-{self.kwargs["pk"]}', None)
+
+        print(obj)
+        print("--"*20)
+        if not obj:
+            obj = super().get_object(queryset=self.queryset)
+            cache.set(f'post-{self.kwargs["pk"]}', obj)
+
+        return obj
 
 class PostDelete(PermissionRequiredMixin, DeleteView):
     permission_required = ('appnews.delete_post',)

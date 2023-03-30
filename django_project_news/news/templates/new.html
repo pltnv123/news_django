@@ -1,17 +1,13 @@
-<!--  наследуемся от шаблона default.html, который мы создавали для flatpages -->
 {% extends 'flatpages/default.html' %}
 
-<!--  подключаю свои фильтры -->
 
 {% load custom_filters %}!
 
 
-<!-- Название у нас будет Product -->
 {% block title %}
 New
 {% endblock title %}
 
-<!-- В контенте на странице мы выводим сам товар, идентификатор которого был передан в url -->
 {% block content %}
 
 <h3>{{ new.dateCreation|date:'d M Y' }}</h3>
