@@ -3,13 +3,10 @@ from .models import Post, Comment, Author, Category
 
 
 class ProductAdmin(admin.ModelAdmin):
-    ## list_display — это список или кортеж со всеми полями, которые вы хотите видеть в таблице с товарами
-    # list_display = [field.name for field in
-    #                 Product._meta.get_fields()]  # генерируем список имён всех полей для более красивого отображения
 
-    list_display = ('id', 'author', 'categoryType', 'dateCreation', 'title', 'text', 'rating')  # оставляем только имя и цену товара
-    list_filter = ('postCategory', 'title', 'rating')  # добавляем примитивные фильтры в нашу админку
-    search_fields = ('title', 'category__name')  # тут всё очень похоже на фильтры из запросов в базу
+    list_display = ('id', 'author', 'categoryType', 'dateCreation', 'title', 'text', 'rating')
+    list_filter = ('author', 'postCategory', 'title', 'rating')
+    search_fields = ('title__icontains', 'postCategory__name__icontains')
 
 
 # Register your models here.
