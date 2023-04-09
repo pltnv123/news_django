@@ -4,9 +4,7 @@ from .models import Post, Category, PostCategory
 from django.forms import DateTimeInput, DateInput
 
 
-
 class PostFilter(FilterSet):
-
     added_after = django_filters.DateFilter(
         field_name='dateCreation',
         lookup_expr='gt',
@@ -30,21 +28,17 @@ class PostFilter(FilterSet):
         label='Категории:'
     )
 
-
-
     # title_list = django_filters.ModelChoiceFilter(
     #     field_name='title',
     #     queryset=Post.objects.all(),
     #     label='Посты:',
     # )
 
-
     title_search = django_filters.CharFilter(
         field_name='title',
         lookup_expr='icontains',
         label='Поиск по постам:',
     )
-
 
     # class Meta:
     #     model = Post

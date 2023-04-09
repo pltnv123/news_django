@@ -49,7 +49,6 @@ class PostNewsDetail(DetailView):
 
 
 class PostSearch(ListView):
-    form_class = PostForm
     model = Post
     template_name = 'post_search.html'
     context_object_name = 'post_search'
