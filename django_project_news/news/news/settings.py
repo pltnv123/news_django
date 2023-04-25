@@ -310,4 +310,4 @@ LOGGING = {
             "level": "DEBUG",
         },
     },
-}
+},
