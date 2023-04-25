@@ -60,7 +60,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
 
-    'appnews.middleware.MobileOrFullMiddleware'
+    # 'appnews.middleware.MobileOrFullMiddleware'
 ]
 
 ROOT_URLCONF = 'news.urls'
@@ -93,11 +93,21 @@ WSGI_APPLICATION = 'news.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'news_postgres',
+        'USER': 'postgres',
+        'PASSWORD': '28091966',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    },
 }
 
 # Password validation
@@ -192,4 +202,112 @@ CACHES = {
         'LOCATION': os.path.join(BASE_DIR, 'cache_files'),
         # 'TIMEOUT': 60
     }
+}
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "filters": {
+        "require_debug_false": {
+            "()": "django.utils.log.RequireDebugFalse",
+        },
+        "require_debug_true": {
+            "()": "django.utils.log.RequireDebugTrue",
+        },
+    },
+    "formatters": {
+        "formainfo": {
+            "()": "django.utils.log.ServerFormatter",
+            "format": "[{server_time}] [{levelname}] [{message}]",
+            "style": "{",
+        },
+        "formawarning": {
+            "()": "django.utils.log.ServerFormatter",
+            "format": "[{server_time}] [{levelname}] [{message}] [{pathname}]",
+            "style": "{",
+        },
+        "formaerorcritical": {
+            "()": "django.utils.log.ServerFormatter",
+            "format": "[{server_time}] [{levelname}] [{message}] [{pathname}] [{exc_info}]",
+            "style": "{",
+        },
+        "fileloginfo": {
+            "()": "django.utils.log.ServerFormatter",
+            "format": "[{server_time}] [{levelname}] [{module}] [{message}]",
+            "style": "{",
+        }
+    },
+    "handlers": {
+        "consoleDebug": {
+            "level": "DEBUG",
+            "filters": ["require_debug_true"],
+            "class": "logging.StreamHandler",
+            "formatter": "formainfo"
+        },
+        "consoleWarning": {
+            "level": "WARNING",
+            "filters": ["require_debug_true"],
+            "class": "logging.StreamHandler",
+            "formatter": "formawarning"
+        },
+        "consoleErrorCritical": {
+            "level": "ERROR",
+            "filters": ["require_debug_true"],
+            "class": "logging.StreamHandler",
+            "formatter": "formaerorcritical",
+        },
+
+        "mail_admins": {
+            "level": "ERROR",
+            "filters": ["require_debug_false"],
+            "class": "django.utils.log.AdminEmailHandler",
+            "formatter": "formawarning",
+        },
+        "fileInfo": {
+            "level": "INFO",
+            "filters": ["require_debug_false"],
+            "class": "logging.FileHandler",
+            "filename": "general.log",
+            "formatter": "fileloginfo",
+        },
+        "fileErrorCritical": {
+            "level": "ERROR",
+            "class": "logging.FileHandler",
+            "filename": "errors.log",
+            "formatter": "formaerorcritical",
+        },
+        "fileSecurity": {
+            "class": "logging.FileHandler",
+            "filename": "security.log",
+            "formatter": "fileloginfo",
+        },
+
+    },
+    "loggers": {
+        "django": {
+            "handlers": ["consoleDebug", "consoleWarning", "consoleErrorCritical", "fileInfo"],
+            "level": "DEBUG",
+        },
+
+        "django.request": {
+            "handlers": ["fileErrorCritical", "mail_admins"],
+            "level": "ERROR",
+        },
+        "django.server": {
+            "handlers": ["fileErrorCritical", "mail_admins"],
+            "level": "ERROR",
+        },
+        "django.template": {
+            "handlers": ["fileErrorCritical"],
+            "level": "ERROR",
+        },
+        "django.db.backends": {
+            "handlers": ["fileErrorCritical"],
+            "level": "ERROR",
+        },
+        "django.security": {
+            "handlers": ["fileSecurity"],
+            "level": "DEBUG",
+        },
+    },
 }

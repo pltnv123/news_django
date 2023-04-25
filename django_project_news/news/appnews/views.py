@@ -178,6 +178,7 @@ def unsubscribe(request, pk):
 
 @login_required()
 def upgrade_user(request):
+    """Если пользователь не автор, кнопка делает его автором с привелегиями"""
     user = request.user
     group = Group.objects.get(name='authors')
 
