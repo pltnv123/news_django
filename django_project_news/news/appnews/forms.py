@@ -1,5 +1,6 @@
 from django import forms
 from django.core.exceptions import ValidationError
+from django.utils.translation import gettext as _
 
 from .models import Post
 
@@ -24,7 +25,7 @@ class PostForm(forms.ModelForm):
 
         if title == text:
             raise ValidationError(
-                "Описание не должно быть идентично названию."
+                _("Описание не должно быть идентично названию.")
             )
 
         return cleaned_data
@@ -34,7 +35,7 @@ class PostForm(forms.ModelForm):
         title = self.cleaned_data["title"]
         if title[0].islower():
             raise ValidationError(
-                "Название должно начинаться с заглавной буквы"
+                _("Название должно начинаться с заглавной буквы")
             )
         return title
 

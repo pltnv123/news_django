@@ -15,12 +15,14 @@ from datetime import datetime
 from django.contrib.auth.mixins import PermissionRequiredMixin, LoginRequiredMixin
 from django.contrib.auth.decorators import login_required
 from .tasks import *
+from django.utils.translation import gettext as _
+
 
 
 class PostNewsList(ListView):
     model = Post
     # Поле, которое будет использоваться для сортировки объектов
-    ordering = '-dateCreation'
+
     # queryset = Post.objects.order_by(
     #     categoryType_lt='NW',
     # )
@@ -28,6 +30,8 @@ class PostNewsList(ListView):
     template_name = 'news.html'
     context_object_name = 'news'
     paginate_by = 10
+    ordering = ['-dateCreation']
+
 
     def get_queryset(self):
         queryset = super().get_queryset()

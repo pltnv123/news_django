@@ -17,12 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
 
-
 urlpatterns = [
     path('admin/', admin.site.urls, name='admin'),
     path('pages/', include('django.contrib.flatpages.urls')),
     path('news/', include('appnews.urls')),
 
     path("accounts/", include("allauth.urls")),
+    path('i18n/', include('django.conf.urls.i18n')),  # подключаем встроенные эндопинты для работы с локализацией
 
 ]

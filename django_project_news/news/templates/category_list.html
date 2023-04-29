@@ -4,37 +4,39 @@
 {# Импортируем модуль с нашим тегом #}
 {% load custom_tags %}
 
+{% load i18n %}
+
 {% block title %}
 Post
 {% endblock title %}
 
 {% block content %}
-   <h1 class="text-center">Новостная лента <span class="text-muted fs-6 fw-normal">Всего: {{ page_obj.paginator.count }}</span></h1>
+   <h1 class="text-center">{% trans 'Новостная лента' %} <span class="text-muted fs-6 fw-normal">{% trans 'Всего:' %} {{ page_obj.paginator.count }}</span></h1>
    <hr>
 
     {% if is_not_subscriber %}
-    <p class="text-center"><a href="{% url 'subscribe' category.id %}" class="btn btn-secondary btn-sm">Подписаться</a></p>
+    <p class="text-center"><a href="{% url 'subscribe' category.id %}" class="btn btn-secondary btn-sm">{% trans 'Подписаться' %}</a></p>
     {% else %}
-    <p class="text-center"><a href="{% url 'unsubscribe' category.id %}" class="btn btn-secondary btn-sm">Отписаться</a></p>
+    <p class="text-center"><a href="{% url 'unsubscribe' category.id %}" class="btn btn-secondary btn-sm">{% trans 'Отписаться' %}</a></p>
     {% endif %}
 
 
    {% if perms.appnews.add_post %}
-   <a href="{% url 'post_create' %}">Добавить Пост</a>
+   <a href="{% url 'post_create' %}">{% trans 'Добавить Пост' %}</a>
    {% endif %}
 
    {% if category_news_list %}
        <table>
            <tr>
 
-               <td>Заголовок</td>
-               <td>Дата публикации</td>
-               <td>Описание</td>
-               <td>Категории</td>
+               <td>{% trans 'Заголовок' %}</td>
+               <td>{% trans 'Дата публикации' %}</td>
+               <td>{% trans 'Описание' %}</td>
+               <td>{% trans 'Категории' %}</td>
 
 
                {% if perms.simpleapp.change_news or perms.simpleapp.delete_news %}
-                <td>Действия</td>
+                <td>{% trans 'Действия' %}</td>
                 {% endif %}
 
            </tr>
@@ -58,10 +60,10 @@ Post
                <td>
                     {# А здесь доступ для каждой ссылки теперь будем проверять отдельно #}
                     {% if perms.appnews.change_post %}
-                    <a href="{% url 'post_update' pk=i.id %}">Изменить</a>
+                    <a href="{% url 'post_update' pk=i.id %}">{% trans 'Изменить' %}</a>
                     {% endif %}
                     {% if perms.appnews.delete_post %}
-                    <a href="{% url 'post_delete' pk=i.id %}">Удалить</a>
+                    <a href="{% url 'post_delete' pk=i.id %}">{% trans 'Удалить' %}</a>
                     {% endif %}
                 </td>
 
@@ -72,7 +74,7 @@ Post
        </table>
  <hr>
    {% else %}
-       <h2>Товаров нет!</h2>
+       <h2>{% trans 'Постов нет!' %}</h2>
    {% endif %}
 {% if page_obj.has_previous %}
        {# Для каждой ссылки пагинации указываем обработку через новый тег #}
@@ -92,5 +94,5 @@ Post
            <a href="?{% url_replace page=page_obj.paginator.num_pages %}">{{ page_obj.paginator.num_pages }}</a>
        {% endif %}
    {% endif %}
-<h6><a href="{% url 'start_new' %}"> На главную! </a></h6>
+<h6><a href="{% url 'start_new' %}"> {% trans 'На главную!' %} </a></h6>
 {% endblock content %}

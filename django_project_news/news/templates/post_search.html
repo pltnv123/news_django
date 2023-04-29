@@ -3,8 +3,10 @@
 {# Импортируем модуль с нашим тегом #}
 {% load custom_tags %}
 
+{% load i18n %}
+
 {% block content %}
-<h1> Товар </h1>
+<h1>{% trans 'Посты' %} </h1>
 <hr>
 
 <!--<label for="meeting-time">Choose a time for your appointment:</label>-->
@@ -16,7 +18,7 @@
 <form action="" method="get">
     {% csrf_token %}
     {{ filterset.form.as_p }}
-    <input type="submit" value="Поиск"  />
+    <input type="submit" value="{% trans 'Поиск' %}"  />
 </form>
 
     {% if post_search %}
@@ -30,7 +32,7 @@
         </table>
         {% endfor %}
     {% else%}
-     <h2>Введите поиск!</h2>
+     <h2>{% trans 'Введите поиск!' %}</h2>
     {% endif %}
 
 {% if page_obj.has_previous %}
@@ -51,5 +53,5 @@
            <a href="?{% url_replace page=page_obj.paginator.num_pages %}">{{ page_obj.paginator.num_pages }}</a>
        {% endif %}
    {% endif %}
-<h6><a href="{% url 'start_new' %}"> На главную! </a></h6>
+<h6><a href="{% url 'start_new' %}">{% trans 'На главную!' %} </a></h6>
 {% endblock content %}

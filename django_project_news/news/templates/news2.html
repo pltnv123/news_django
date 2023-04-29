@@ -3,16 +3,18 @@
 {% load custom_filters %}
 {% load custom_tags %}
 
+{% load i18n %}
+
 {% block title %}
 News
 {% endblock title %}
 
 {% block content %}
-<h1 class="text-center">Новостная лента <span class="text-muted fs-6 fw-normal">Всего: {{ page_obj.paginator.count }}</span></h1>
+<h1 class="text-center">{% trans 'Новостная лента' %} <span class="text-muted fs-6 fw-normal">{% trans 'Всего:' %} {{ page_obj.paginator.count }}</span></h1>
 <hr>
 <ul class="list-group list-group-flush">
     {% if perms.news.add_post %}
-    <a href="{% url 'post_create' %}">Добавить пост</a>
+    <a href="{% url 'post_create' %}">{% trans 'Добавить пост' %}</a>
     {% endif %}
 
     {% if news %}
@@ -20,15 +22,15 @@ News
         <li class="list-group-item">
             <small class="fw-bold">{{ post.dateCreation|date:'d M Y' }} </small>
             <a href="{% url 'post_detail' post.id %}">{{ post.title }}</a>
-            <small class="fw-bold">Категория:
+            <small class="fw-bold">{% trans 'Категория:' %}
                 {% for postCategory in post.postCategory.all %}
                     <a href="{% url 'category_list' postCategory.id %}">{{ postCategory }}</a>
                 {% endfor %}
                 {% if perms.news.change_post %}
-                <br><a href="{% url 'post_update' pk=post.id %}">Редактировать</a>
+                <br><a href="{% url 'post_update' pk=post.id %}">{% trans 'Редактировать' %}</a>
                 {% endif %}
                 {% if perms.news.delete_post %}
-                <a href="{% url 'post_delete' pk=post.id %}">Удалить</a>
+                <a href="{% url 'post_delete' pk=post.id %}">{% trans 'Удалить' %}</a>
                 {% endif %}
             </small>
             <p>{{ post.text|censor|truncatechars:25 }}</p>
@@ -36,7 +38,7 @@ News
     {% endfor %}
 
     {% else %}
-        <h1>Новостей нет!</h1>
+        <h1>{% trans 'Новостей нет!' %}</h1>
     {% endif %}
 </ul>
 

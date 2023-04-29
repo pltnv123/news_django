@@ -4,89 +4,98 @@
 {# Импортируем модуль с нашим тегом #}
 {% load custom_tags %}
 
+{% load i18n %}
+
 {% block title %}
 Post
 {% endblock title %}
 
 {% block content %}
+    <div align="right">
+    <form action="{% url 'set_language' %}" method="POST"> {% csrf_token %} <!-- Не забываем по csrf_token для POST запросов -->
+        <input type="hidden" name="next" value="{{ redirect_to }}">
+        {% get_current_language as LANGUAGE_CODE %}
 
-<h4><a href="{% url 'post_search' %}"> Поиск по постам </a></h4>
+        <select name="language" id="">
+            {% get_available_languages as LANGUAGES %} <!-- получаем языки -->
+            {% get_language_info_list for LANGUAGES as languages %} <!-- Помещаем их в список languages -->
+
+            {% for language in languages %} <!-- Итерируясь по списку, выводим их название на языке пользователя и код -->
+                <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %} selected {% endif %}>
+                    {{ language.name_local }} - {{ language.code }}
+                </option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="{% trans 'Нажать' %}">
+    </form>
+    </div>
+<h4><a href="{% url 'post_search' %}"> {% trans 'Поиск по постам' %}</a></h4>
 
 {% if request.user.is_authenticated %}
 {% if not is_author %}
 <button>
     <a class="nav-link" href="{% url 'account_upgrade' %}">
-        <h4><strong>Стать автором постов!</strong></h4>
+        <h4><strong>{% trans 'Стать автором постов!' %}</strong></h4>
     </a>
 </button>
 {% endif %}
 {% endif %}
 
-<h1 class="text-center">Новостная лента <span class="text-muted fs-6 fw-normal">Всего: {{ page_obj.paginator.count }}</span></h1>
+<h1 class="text-center">{% trans 'Новостная лента' %} <span class="text-muted fs-6 fw-normal">{% trans 'Всего:' %} {{ page_obj.paginator.count }}</span></h1>
 <hr>
 
    {% if perms.appnews.add_post %}
-   <a href="{% url 'post_create' %}">Добавить Пост</a>
+
+   <a href="{% url 'post_create' %}">{% trans 'Добавить Пост' %}</a>
 
    {% endif %}
+
 {% if not request.user.is_authenticated %}
-<div align="right"> <a href="http://127.0.0.1:8000/accounts/login"> Вход </a> </div>
-<div align="right"> <a href="http://127.0.0.1:8000/accounts/signup"> Регистрация </a> </div>
+<div align="right"> <a href="http://127.0.0.1:8000/accounts/login"> {% trans 'Вход' %} </a> </div>
+<div align="right"> <a href="http://127.0.0.1:8000/accounts/signup"> {% trans 'Регистрация' %} </a> </div>
 {% endif %}
 
 {% if request.user.is_authenticated %}
-<div align="right"> <a href="http://127.0.0.1:8000/accounts/logout"> Выход из профиля </a> </div>
+<div align="right"> <a href="http://127.0.0.1:8000/accounts/logout"> {% trans 'Выход из профиля' %} </a> </div>
 {% endif %}
 
    {% if news %}
        <table>
            <tr>
 
-               <td>Заголовок</td>
-               <td>Дата публикации</td>
-               <td>Описание</td>
-               <td>Категории</td>
+               <td>{% trans 'Заголовок' %}</td>
+               <td>{% trans 'Дата публикации' %}</td>
+               <td>{% trans 'Описание' %}</td>
+               <td>{% trans 'Категории' %}</td>
 
 
                {% if perms.simpleapp.change_news or perms.simpleapp.delete_news %}
-                <td>Действия</td>
+                <td>{% trans 'Действия' %}</td>
                 {% endif %}
 
            </tr>
 
-           <!-- Для каждого товара будете генерироваться новая строчка,
-           т.е. новый HTML код, который указан в теле цикла.
-           При этом сам цикл работает точно так же, как и в Python.
-           product — переменная цикла, т.е. наш товар полученный из списка -->
-
            {% for i in news %}
            <tr>
 
-               <!-- Не забываем, что переменные в шаблоне ничем не отличаются
-                от переменных в Python. Здесь также можно получать доступ к
-                полям объекта модели. Например, здесь мы выводим имя,
-                в следующем столбце описание, и т.д.  -->
-               <td>{{ i.title }}</td>
-               <td>{{ i.dateCreation }}</td>
-               <td>{{ i.text|truncatechars:15 }}</td>
+               <td> {% trans i.title %} </td>
+               <td> {{ i.dateCreation|date:"Y-m-d H:i:s" }} </td>
+               <td> {% trans i.text|truncatechars:15 %}</td>
 
-<!--               <td>{{ i.post_Category.get.category_name }}</td>        хз не работает-->
                <td>
                     {% for postCategory in i.postCategory.all %}
                     <a href="{% url 'category_list' postCategory.id %}">{{ postCategory }}</a>
-                {% endfor %}
+                    {% endfor %}
                </td>
-
-
 
 
                <td>
                     {# А здесь доступ для каждой ссылки теперь будем проверять отдельно #}
                     {% if perms.appnews.change_post %}
-                    <a href="{% url 'post_update' pk=i.id %}">Изменить</a>
+                    <a href="{% url 'post_update' pk=i.id %}">{% trans 'Изменить' %}</a>
                     {% endif %}
                     {% if perms.appnews.delete_post %}
-                    <a href="{% url 'post_delete' pk=i.id %}">Удалить</a>
+                    <a href="{% url 'post_delete' pk=i.id %}">{% trans 'Удалить' %}</a>
                     {% endif %}
                 </td>
 
@@ -97,7 +106,7 @@ Post
        </table>
  <hr>
    {% else %}
-       <h2>Товаров нет!</h2>
+       <h2>{% trans 'Товаров нет!' %}</h2>
    {% endif %}
 {% if page_obj.has_previous %}
        {# Для каждой ссылки пагинации указываем обработку через новый тег #}

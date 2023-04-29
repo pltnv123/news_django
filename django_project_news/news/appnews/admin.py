@@ -2,6 +2,7 @@ from django.contrib import admin
 from .models import Post, Comment, Author, Category
 
 
+
 class ProductAdmin(admin.ModelAdmin):
 
     list_display = ('id', 'author', 'categoryType', 'dateCreation', 'title', 'text', 'rating')
@@ -15,5 +16,6 @@ admin.site.register(Category)
 admin.site.register(Post, ProductAdmin)
 admin.site.register(Comment)
 admin.site.register(Author)
+
 
 

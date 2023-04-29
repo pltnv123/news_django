@@ -3,6 +3,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.db.models import Sum
 from django.urls import reverse
+from django.utils.translation import gettext as _
 
 
 class Author(models.Model):
@@ -28,7 +29,7 @@ class Author(models.Model):
 
 
 class Category(models.Model):
-    name = models.CharField(max_length=128, unique=True)
+    name = models.CharField(max_length=128, unique=True, help_text=_('Имя категории'))
     subscribers = models.ManyToManyField(User, related_name='categories', blank=True)
 
     def __str__(self):
@@ -40,8 +41,8 @@ class Post(models.Model):
     NEWS = 'NW'
     ARTICLE = 'AR'
     CATEGORY_CHOIESES = (
-        (NEWS, 'Новость'),
-        (ARTICLE, 'Статья')
+        (NEWS, _('Новость')),
+        (ARTICLE, _('Статья'))
     )
     categoryType = models.CharField(max_length=2, choices=CATEGORY_CHOIESES, default=ARTICLE)
     dateCreation = models.DateTimeField(auto_now_add=True)
@@ -74,8 +75,8 @@ class Post(models.Model):
         cache.delete(f'post-{self.pk}')
 
     class Meta:
-        verbose_name = 'Пост'
-        verbose_name_plural = 'Посты'
+        verbose_name = _('Пост')
+        verbose_name_plural = _('Посты')
 
 
 class PostCategory(models.Model):

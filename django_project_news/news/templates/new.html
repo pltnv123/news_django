@@ -1,5 +1,6 @@
 {% extends 'flatpages/default.html' %}
 
+{% load i18n %}
 
 {% load custom_filters %}!
 
@@ -17,5 +18,5 @@ New
 <h4>{{ new.text }}</h4>
 
 <hr>
-<h6><a href="{% url 'start_new' %}"> На главную! </a></h6>
+<h6><a href="{% url 'start_new' %}"> {% trans 'На главную!' %} </a></h6>
 {% endblock content %}

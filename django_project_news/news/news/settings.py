@@ -11,6 +11,11 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 import os
 from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
+env_path = Path('.')/'.env'
+load_dotenv(dotenv_path=env_path)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -19,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-$6@+qi^orj3^)e-t8j04bz-dal#6_br!x&j%kn5jc3&kvewf#d'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -59,6 +64,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
+    'django.middleware.locale.LocaleMiddleware',  # gettext
 
     # 'appnews.middleware.MobileOrFullMiddleware'
 ]
@@ -102,9 +108,9 @@ WSGI_APPLICATION = 'news.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'news_postgres',
-        'USER': 'postgres',
-        'PASSWORD': '28091966',
+        'NAME': os.getenv('DB_NAME'),
+        'USER': os.getenv('DB_USER'),
+        'PASSWORD': os.getenv('DB_PASSWORD'),
         'HOST': 'localhost',
         'PORT': '5432',
     },
@@ -171,13 +177,13 @@ ACCOUNT_FORMS = {"signup": "accounts.forms.CustomSignupForm"}
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST = 'smtp.yandex.ru'
 EMAIL_PORT = 465
-EMAIL_HOST_USER = "pltnvntn"
-EMAIL_HOST_PASSWORD = "hyrevhwgyajdslff"
+EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
 EMAIL_TIMEOUT = 60
 
-DEFAULT_FROM_EMAIL = "pltnvntn@yandex.ru"
+DEFAULT_FROM_EMAIL = os.getenv('DEFAULT_FROM_EMAIL')
 
 ##
 
@@ -239,32 +245,32 @@ LOGGING = {
     "handlers": {
         "consoleDebug": {
             "level": "DEBUG",
-            "filters": ["require_debug_true"],
+            "filters": ["require_debug_false"],
             "class": "logging.StreamHandler",
             "formatter": "formainfo"
         },
         "consoleWarning": {
             "level": "WARNING",
-            "filters": ["require_debug_true"],
+            "filters": ["require_debug_false"],
             "class": "logging.StreamHandler",
             "formatter": "formawarning"
         },
         "consoleErrorCritical": {
             "level": "ERROR",
-            "filters": ["require_debug_true"],
+            "filters": ["require_debug_false"],
             "class": "logging.StreamHandler",
             "formatter": "formaerorcritical",
         },
 
         "mail_admins": {
             "level": "ERROR",
-            "filters": ["require_debug_false"],
+            "filters": ["require_debug_true"],
             "class": "django.utils.log.AdminEmailHandler",
             "formatter": "formawarning",
         },
         "fileInfo": {
             "level": "INFO",
-            "filters": ["require_debug_false"],
+            "filters": ["require_debug_true"],
             "class": "logging.FileHandler",
             "filename": "general.log",
             "formatter": "fileloginfo",
@@ -310,3 +316,17 @@ LOGGING = {
         },
     },
 }
+
+ADMINS = (
+    ('anton', os.getenv('ADMIN_EMAIL')),
+)
+
+
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, 'locale')
+]
+
+LANGUAGES = [
+    ('en-us', 'English'),
+    ('ru', 'Русский')
+]
