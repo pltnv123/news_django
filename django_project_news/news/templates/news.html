@@ -5,12 +5,15 @@
 {% load custom_tags %}
 
 {% load i18n %}
+{% load tz %}
 
 {% block title %}
 Post
 {% endblock title %}
 
 {% block content %}
+
+
     <div align="right">
     <form action="{% url 'set_language' %}" method="POST"> {% csrf_token %} <!-- Не забываем по csrf_token для POST запросов -->
         <input type="hidden" name="next" value="{{ redirect_to }}">
@@ -29,6 +32,31 @@ Post
         <input type="submit" value="{% trans 'Нажать' %}">
     </form>
     </div>
+
+    <br>
+
+    {% get_current_timezone as TIME_ZONE %}
+    <div align="right">
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label for="timezone">Time zone:</label>
+        <select name="timezone">
+            {% for tz in timezones %}
+            <option value="{{ tz }}"{% if tz == TIME_ZONE %} selected{% endif %}>{{ tz }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="{% trans 'Нажать' %}">
+    </form>
+
+    {{ TIME_ZONE }}
+    {{ current_time|timezone:TIME_ZONE }}
+
+    <style>
+        body {background-color: {% if current_time.hour >= 19 or current_time.hour <= 7 %} darkcyan {% else %} powderblue {% endif %};}
+    </style>
+
+    </div>
+
 <h4><a href="{% url 'post_search' %}"> {% trans 'Поиск по постам' %}</a></h4>
 
 {% if request.user.is_authenticated %}
@@ -106,7 +134,7 @@ Post
        </table>
  <hr>
    {% else %}
-       <h2>{% trans 'Товаров нет!' %}</h2>
+       <h2>{% trans 'Постов нет!' %}</h2>
    {% endif %}
 {% if page_obj.has_previous %}
        {# Для каждой ссылки пагинации указываем обработку через новый тег #}

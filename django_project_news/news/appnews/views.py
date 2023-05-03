@@ -16,16 +16,13 @@ from django.contrib.auth.mixins import PermissionRequiredMixin, LoginRequiredMix
 from django.contrib.auth.decorators import login_required
 from .tasks import *
 from django.utils.translation import gettext as _
-
+from django.utils import timezone
+import pytz
 
 
 class PostNewsList(ListView):
     model = Post
-    # Поле, которое будет использоваться для сортировки объектов
 
-    # queryset = Post.objects.order_by(
-    #     categoryType_lt='NW',
-    # )
 
     template_name = 'news.html'
     context_object_name = 'news'
@@ -43,7 +40,27 @@ class PostNewsList(ListView):
         context = super().get_context_data(**kwargs)
         context['filterset'] = self.filterset
         context['is_author'] = self.request.user.groups.filter(name='authors').exists()
+        context['current_time'] = timezone.now()
+        context['timezones'] = pytz.common_timezones
         return context
+
+    # def get(self, request):
+    #     curent_time = timezone.now()
+    #
+    #     # .  Translators: This message appears on the home page only
+    #     news = Post.objects.all()
+    #
+    #     context = {
+    #         'news': news,
+    #         'current_time': timezone.now(),
+    #         'timezones': pytz.common_timezones  # добавляем в контекст все доступные часовые пояса
+    #     }
+    #
+    #     return HttpResponse(render(request, 'news.html', context))
+
+    def post(self, request):
+        request.session['django_timezone'] = request.POST['timezone']
+        return redirect(request.META.get('HTTP_REFERER'))
 
 
 class PostNewsDetail(DetailView):
@@ -84,10 +101,6 @@ class PostCreate(PermissionRequiredMixin, CreateView):
         form.instance.author = self.request.user.author
         return super().form_valid(form)
 
-    # def form_valid(self, form):
-    #     category = form.save(commit=False)
-    #     category.categoryType = 'AR'
-    #     return super().form_valid(form)
 
 
 class PostUpdate(PermissionRequiredMixin, UpdateView):

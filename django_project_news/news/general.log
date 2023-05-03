@@ -6786,3 +6786,347 @@ django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '
 [29/Apr/2023 15:00:03,952] [INFO] [autoreload] [Watching for file changes with StatReloader]
 [29/Apr/2023 16:42:10,392] [INFO] [autoreload] [Watching for file changes with StatReloader]
 [29/Apr/2023 16:43:17,847] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[30/Apr/2023 14:32:39,617] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[30/Apr/2023 14:37:05,530] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[30/Apr/2023 14:38:19,925] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\admin.py changed, reloading.]
+[30/Apr/2023 14:38:21,117] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[30/Apr/2023 14:48:45,302] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\admin.py changed, reloading.]
+[30/Apr/2023 14:48:46,411] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[30/Apr/2023 14:51:07,367] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[30/Apr/2023 14:51:21,083] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\translation.py changed, reloading.]
+[30/Apr/2023 14:51:22,636] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[30/Apr/2023 14:51:45,151] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\translation.py changed, reloading.]
+[30/Apr/2023 14:51:46,137] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[30/Apr/2023 14:52:19,017] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\translation.py changed, reloading.]
+[30/Apr/2023 14:52:20,047] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[30/Apr/2023 14:52:43,377] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\translation.py changed, reloading.]
+[30/Apr/2023 14:52:44,474] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[30/Apr/2023 14:53:10,661] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[30/Apr/2023 14:53:45,107] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[30/Apr/2023 14:54:09,491] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\translation.py changed, reloading.]
+[30/Apr/2023 14:54:10,643] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[30/Apr/2023 14:55:22,267] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\translation.py changed, reloading.]
+[30/Apr/2023 14:55:23,307] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[30/Apr/2023 14:56:51,705] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\translation.py changed, reloading.]
+[30/Apr/2023 14:56:52,957] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[30/Apr/2023 14:58:28,355] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\admin.py changed, reloading.]
+[30/Apr/2023 14:58:29,541] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[30/Apr/2023 15:08:13,347] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[30/Apr/2023 15:16:51,940] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[01/May/2023 13:18:00,717] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[02/May/2023 15:21:00,365] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[02/May/2023 15:24:33,940] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[02/May/2023 15:25:59,384] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[02/May/2023 15:27:24,845] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[02/May/2023 15:38:04,258] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[02/May/2023 15:45:25,654] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\views.py changed, reloading.]
+[02/May/2023 15:45:26,754] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[02/May/2023 15:48:30,194] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\views.py changed, reloading.]
+[02/May/2023 15:48:31,451] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[02/May/2023 15:48:58,795] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\views.py changed, reloading.]
+[02/May/2023 15:48:59,800] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[02/May/2023 16:40:32,785] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[02/May/2023 16:41:40,743] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\models.py changed, reloading.]
+[02/May/2023 16:41:42,062] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[02/May/2023 16:42:03,034] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\models.py changed, reloading.]
+[02/May/2023 16:42:04,433] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[02/May/2023 16:42:29,657] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\models.py changed, reloading.]
+[02/May/2023 16:42:30,803] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[02/May/2023 16:43:19,586] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\models.py changed, reloading.]
+[02/May/2023 16:43:20,759] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[02/May/2023 16:43:38,750] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\models.py changed, reloading.]
+[02/May/2023 16:43:39,781] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[02/May/2023 16:44:18,918] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\models.py changed, reloading.]
+[02/May/2023 16:44:20,213] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[02/May/2023 16:48:17,364] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[02/May/2023 16:55:02,169] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[02/May/2023 17:08:44,199] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[02/May/2023 22:57:43,318] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 12:34:21,712] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 12:34:35,021] [ERROR] [log] [[35;1m[35;1mInternal Server Error: /news/search/[0m[0m]
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\dev\Django_project_news\django_project_news\news\appnews\templatetags\custom_filters.py", line 62, in filter_message
+    return filtred_message
+UnboundLocalError: local variable 'filtred_message' referenced before assignment
+[03/May/2023 12:38:48,015] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\templatetags\custom_filters.py changed, reloading.]
+[03/May/2023 12:38:49,121] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 12:39:17,530] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\templatetags\custom_filters.py changed, reloading.]
+[03/May/2023 12:39:18,598] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 12:39:27,065] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\templatetags\custom_filters.py changed, reloading.]
+[03/May/2023 12:39:28,219] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 12:41:37,334] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 12:41:38,068] [ERROR] [log] [[35;1m[35;1mInternal Server Error: /news/search/[0m[0m]
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\dev\Django_project_news\django_project_news\news\appnews\templatetags\custom_filters.py", line 63, in filter_message
+    return filtred_message
+UnboundLocalError: local variable 'filtred_message' referenced before assignment
+[03/May/2023 12:41:50,678] [ERROR] [log] [[35;1m[35;1mInternal Server Error: /news/search/[0m[0m]
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\dev\Django_project_news\django_project_news\news\appnews\templatetags\custom_filters.py", line 63, in filter_message
+    return filtred_message
+UnboundLocalError: local variable 'filtred_message' referenced before assignment
+[03/May/2023 12:42:57,092] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\templatetags\custom_filters.py changed, reloading.]
+[03/May/2023 12:42:58,109] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 12:43:19,352] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\templatetags\custom_filters.py changed, reloading.]
+[03/May/2023 12:43:20,397] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 12:43:56,706] [ERROR] [log] [[35;1m[35;1mInternal Server Error: /news/search/[0m[0m]
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\base.py", line 742, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "C:\dev\Django_project_news\django_project_news\news\appnews\templatetags\custom_filters.py", line 63, in filter_message
+    return filtred_message
+UnboundLocalError: local variable 'filtred_message' referenced before assignment
+[03/May/2023 12:44:01,909] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\templatetags\custom_filters.py changed, reloading.]
+[03/May/2023 12:44:02,929] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 13:13:40,300] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\models.py changed, reloading.]
+[03/May/2023 13:13:41,458] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 13:14:22,770] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\models.py changed, reloading.]
+[03/May/2023 13:14:50,881] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 13:16:26,441] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\models.py changed, reloading.]
+[03/May/2023 13:16:27,249] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 13:17:31,663] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 13:19:06,737] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 13:21:04,735] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\forms.py changed, reloading.]
+[03/May/2023 13:21:05,849] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 13:21:24,318] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\forms.py changed, reloading.]
+[03/May/2023 13:21:25,334] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 13:24:08,809] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\forms.py changed, reloading.]
+[03/May/2023 13:24:10,228] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 13:24:34,397] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\forms.py changed, reloading.]
+[03/May/2023 13:24:35,453] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 13:24:51,100] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\forms.py changed, reloading.]
+[03/May/2023 13:24:52,272] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 13:37:14,322] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 13:39:09,846] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\forms.py changed, reloading.]
+[03/May/2023 13:39:10,910] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 13:39:35,037] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\forms.py changed, reloading.]
+[03/May/2023 13:39:36,075] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 13:39:44,293] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\forms.py changed, reloading.]
+[03/May/2023 13:39:45,442] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 13:41:50,665] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\forms.py changed, reloading.]
+[03/May/2023 13:41:51,694] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 14:43:43,846] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\forms.py changed, reloading.]
+[03/May/2023 14:43:45,304] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 14:43:55,721] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\forms.py changed, reloading.]
+[03/May/2023 14:43:56,726] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 14:45:07,596] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 14:45:33,851] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\forms.py changed, reloading.]
+[03/May/2023 14:45:34,853] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 14:45:41,285] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 14:46:19,168] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[03/May/2023 14:46:44,741] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\forms.py changed, reloading.]
+[03/May/2023 14:46:45,802] [INFO] [autoreload] [Watching for file changes with StatReloader]

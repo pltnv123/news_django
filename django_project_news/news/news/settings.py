@@ -34,6 +34,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'modeltranslation',
+    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -64,9 +66,9 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
-    'django.middleware.locale.LocaleMiddleware',  # gettext
 
-    # 'appnews.middleware.MobileOrFullMiddleware'
+    'django.middleware.locale.LocaleMiddleware',  # gettext
+    'appnews.middleware.TimezoneMiddleware'
 ]
 
 ROOT_URLCONF = 'news.urls'

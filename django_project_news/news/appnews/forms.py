@@ -1,23 +1,25 @@
 from django import forms
 from django.core.exceptions import ValidationError
-from django.utils.translation import gettext as _
+from django.utils.translation import gettext as _, gettext_lazy
 
 from .models import Post
 
 
 class PostForm(forms.ModelForm):
-    # условие проверки
-    # description = forms.CharField(min_length=20)
 
     class Meta:
         model = Post
         fields = ['title',
                   'text',
                   'categoryType',
-                  # 'author',
                   'postCategory',
                   ]
-
+        labels = {
+            'title': gettext_lazy('Заголовок'),
+            'text': gettext_lazy('Текст'),
+            'categoryType': gettext_lazy('Тип категории'),
+            'postCategory': gettext_lazy('Категория'),
+        }
     def clean(self):
         cleaned_data = super().clean()
         title = cleaned_data.get("title")
