@@ -6,6 +6,7 @@ from django.views import View
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
 from django.http import HttpResponse
+from rest_framework import viewsets
 
 from news import settings
 from .filters import PostFilter
@@ -19,16 +20,16 @@ from django.utils.translation import gettext as _
 from django.utils import timezone
 import pytz
 
+from .serializers import ARPostSerializer, NWPostSerializer
+
 
 class PostNewsList(ListView):
     model = Post
-
 
     template_name = 'news.html'
     context_object_name = 'news'
     paginate_by = 10
     ordering = ['-dateCreation']
-
 
     def get_queryset(self):
         queryset = super().get_queryset()
@@ -102,24 +103,25 @@ class PostCreate(PermissionRequiredMixin, CreateView):
         return super().form_valid(form)
 
 
-
 class PostUpdate(PermissionRequiredMixin, UpdateView):
     permission_required = ('appnews.change_post',)
     form_class = PostForm
     model = Post
     template_name = 'post_edit.html'
+
     # success_url = reverse_lazy('post_update')
 
     def get_object(self, *args, **kwargs):
         obj = cache.get(f'post-{self.kwargs["pk"]}', None)
 
         print(obj)
-        print("--"*20)
+        print("--" * 20)
         if not obj:
             obj = super().get_object(queryset=self.queryset)
             cache.set(f'post-{self.kwargs["pk"]}', obj)
 
         return obj
+
 
 class PostDelete(PermissionRequiredMixin, DeleteView):
     permission_required = ('appnews.delete_post',)
@@ -204,4 +206,16 @@ def upgrade_user(request):
         Author.objects.create(authorUser=user)
     return redirect('/news')
 
+
+################  api  ####################
+
+class ARPostViewest(viewsets.ModelViewSet):
+    queryset = Post.objects.filter(categoryType='AR')
+    serializer_class = ARPostSerializer
+    ordering = ['-dateCreation']
+
+class NWPostViewest(viewsets.ModelViewSet):
+    queryset = Post.objects.filter(categoryType='NW')
+    serializer_class = NWPostSerializer
+    ordering = ['-dateCreation']
 

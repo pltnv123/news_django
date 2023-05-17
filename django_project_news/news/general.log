@@ -7130,3 +7130,923 @@ UnboundLocalError: local variable 'filtred_message' referenced before assignment
 [03/May/2023 14:46:19,168] [INFO] [autoreload] [Watching for file changes with StatReloader]
 [03/May/2023 14:46:44,741] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\forms.py changed, reloading.]
 [03/May/2023 14:46:45,802] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 16:32:50,902] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 16:33:19,981] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\views.py changed, reloading.]
+[10/May/2023 16:33:20,908] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 16:33:50,137] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\views.py changed, reloading.]
+[10/May/2023 16:33:51,059] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 16:34:33,064] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\views.py changed, reloading.]
+[10/May/2023 16:34:34,055] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 16:35:53,128] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\urls.py changed, reloading.]
+[10/May/2023 16:35:54,067] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 16:36:30,707] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\urls.py changed, reloading.]
+[10/May/2023 16:36:31,862] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 16:38:16,477] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\urls.py changed, reloading.]
+[10/May/2023 16:38:17,458] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 16:39:29,989] [ERROR] [log] [[35;1m[35;1mInternal Server Error: /news/api/[0m[0m]
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\renderers.py", line 722, in render
+    template = loader.get_template(self.template)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+[10/May/2023 16:42:54,483] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\urls.py changed, reloading.]
+[10/May/2023 16:42:58,521] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 16:43:05,208] [ERROR] [log] [[35;1m[35;1mInternal Server Error: /api/[0m[0m]
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\renderers.py", line 722, in render
+    template = loader.get_template(self.template)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+[10/May/2023 16:45:51,510] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 16:46:55,150] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\models.py changed, reloading.]
+[10/May/2023 16:46:55,959] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 17:09:28,211] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 17:09:35,181] [ERROR] [log] [[35;1m[35;1mInternal Server Error: /api/news/[0m[0m]
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 507, in to_representation
+    for field in fields:
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `authorUser` is not valid for model `Post`.
+[10/May/2023 17:10:00,331] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\serializers.py changed, reloading.]
+[10/May/2023 17:10:01,330] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 17:10:01,871] [ERROR] [log] [[35;1m[35;1mInternal Server Error: /api/news/[0m[0m]
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 401, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 339, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'category-detail' not found. 'category-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 565, in to_representation
+    return [
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 566, in <listcomp>
+    self.child_relation.to_representation(value)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 416, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "category-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+[10/May/2023 17:10:11,586] [ERROR] [log] [[35;1m[35;1mInternal Server Error: /api/news/[0m[0m]
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 401, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 339, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'category-detail' not found. 'category-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 565, in to_representation
+    return [
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 566, in <listcomp>
+    self.child_relation.to_representation(value)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 416, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "category-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+[10/May/2023 17:12:28,961] [ERROR] [log] [[35;1m[35;1mInternal Server Error: /api/news/[0m[0m]
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 401, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 339, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'category-detail' not found. 'category-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 565, in to_representation
+    return [
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 566, in <listcomp>
+    self.child_relation.to_representation(value)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 416, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "category-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+[10/May/2023 17:12:56,740] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\serializers.py changed, reloading.]
+[10/May/2023 17:12:57,712] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 17:13:00,240] [ERROR] [log] [[35;1m[35;1mInternal Server Error: /api/news/[0m[0m]
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 401, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 339, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'category-detail' not found. 'category-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 565, in to_representation
+    return [
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 566, in <listcomp>
+    self.child_relation.to_representation(value)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 416, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "category-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+[10/May/2023 17:13:10,813] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\serializers.py changed, reloading.]
+[10/May/2023 17:13:11,810] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 17:13:12,318] [ERROR] [log] [[35;1m[35;1mInternal Server Error: /api/news/[0m[0m]
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 401, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 339, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'category-detail' not found. 'category-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 565, in to_representation
+    return [
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 566, in <listcomp>
+    self.child_relation.to_representation(value)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 416, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "category-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+[10/May/2023 17:13:13,318] [ERROR] [log] [[35;1m[35;1mInternal Server Error: /api/news/[0m[0m]
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 401, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 339, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'category-detail' not found. 'category-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 565, in to_representation
+    return [
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 566, in <listcomp>
+    self.child_relation.to_representation(value)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 416, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "category-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+[10/May/2023 17:13:13,539] [ERROR] [log] [[35;1m[35;1mInternal Server Error: /api/news/[0m[0m]
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 401, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 339, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'category-detail' not found. 'category-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 565, in to_representation
+    return [
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 566, in <listcomp>
+    self.child_relation.to_representation(value)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\relations.py", line 416, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "category-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+[10/May/2023 17:14:06,077] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\serializers.py changed, reloading.]
+[10/May/2023 17:14:07,167] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 17:14:50,319] [ERROR] [log] [[35;1m[35;1mInternal Server Error: /api/news/[0m[0m]
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: ОШИБКА:  значение NULL в столбце "author_id" отношения "appnews_post" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (7, NW, 2023-05-10 14:14:50.188228+00, Новая новость, Новостьновостьновость, 0, null, null, Новостьновостьновость, null, Новая новость).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\modeltranslation\manager.py", line 388, in create
+    return super(MultilingualQuerySet, self).create(**kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\dev\Django_project_news\django_project_news\news\appnews\models.py", line 85, in save
+    super().save(*args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\base.py", line 812, in save
+    self.save_base(
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\base.py", line 863, in save_base
+    updated = self._save_table(
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\base.py", line 1006, in _save_table
+    results = self._do_insert(
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\base.py", line 1047, in _do_insert
+    return manager._insert(
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: ОШИБКА:  значение NULL в столбце "author_id" отношения "appnews_post" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (7, NW, 2023-05-10 14:14:50.188228+00, Новая новость, Новостьновостьновость, 0, null, null, Новостьновостьновость, null, Новая новость).
+
+[10/May/2023 17:15:10,775] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\serializers.py changed, reloading.]
+[10/May/2023 17:15:11,795] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 17:15:22,684] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\serializers.py changed, reloading.]
+[10/May/2023 17:15:23,712] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 17:15:31,457] [ERROR] [log] [[35;1m[35;1mInternal Server Error: /api/news/[0m[0m]
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: ОШИБКА:  значение NULL в столбце "author_id" отношения "appnews_post" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (8, NW, 2023-05-10 14:15:31.406381+00, Титул, Текст, 0, null, null, Текст, null, Титул).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\modeltranslation\manager.py", line 388, in create
+    return super(MultilingualQuerySet, self).create(**kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\dev\Django_project_news\django_project_news\news\appnews\models.py", line 85, in save
+    super().save(*args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\base.py", line 812, in save
+    self.save_base(
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\base.py", line 863, in save_base
+    updated = self._save_table(
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\base.py", line 1006, in _save_table
+    results = self._do_insert(
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\base.py", line 1047, in _do_insert
+    return manager._insert(
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: ОШИБКА:  значение NULL в столбце "author_id" отношения "appnews_post" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (8, NW, 2023-05-10 14:15:31.406381+00, Титул, Текст, 0, null, null, Текст, null, Титул).
+
+[10/May/2023 17:16:46,645] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\serializers.py changed, reloading.]
+[10/May/2023 17:16:47,631] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 17:17:00,671] [ERROR] [log] [[35;1m[35;1mInternal Server Error: /api/news/[0m[0m]
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: ОШИБКА:  значение NULL в столбце "author_id" отношения "appnews_post" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (9, NW, 2023-05-10 14:17:00.62085+00, ssssssssssssssss, dddddddddddddddddd, 0, null, null, dddddddddddddddddd, null, ssssssssssssssss).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\modeltranslation\manager.py", line 388, in create
+    return super(MultilingualQuerySet, self).create(**kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\dev\Django_project_news\django_project_news\news\appnews\models.py", line 85, in save
+    super().save(*args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\base.py", line 812, in save
+    self.save_base(
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\base.py", line 863, in save_base
+    updated = self._save_table(
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\base.py", line 1006, in _save_table
+    results = self._do_insert(
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\base.py", line 1047, in _do_insert
+    return manager._insert(
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: ОШИБКА:  значение NULL в столбце "author_id" отношения "appnews_post" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (9, NW, 2023-05-10 14:17:00.62085+00, ssssssssssssssss, dddddddddddddddddd, 0, null, null, dddddddddddddddddd, null, ssssssssssssssss).
+
+[10/May/2023 17:17:43,365] [ERROR] [log] [[35;1m[35;1mInternal Server Error: /api/news/[0m[0m]
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: ОШИБКА:  значение NULL в столбце "author_id" отношения "appnews_post" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (10, NW, 2023-05-10 14:17:43.318975+00, ssssssssssssssss, dddddddddddddddddd, 0, null, null, dddddddddddddddddd, null, ssssssssssssssss).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\modeltranslation\manager.py", line 388, in create
+    return super(MultilingualQuerySet, self).create(**kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\dev\Django_project_news\django_project_news\news\appnews\models.py", line 85, in save
+    super().save(*args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\base.py", line 812, in save
+    self.save_base(
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\base.py", line 863, in save_base
+    updated = self._save_table(
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\base.py", line 1006, in _save_table
+    results = self._do_insert(
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\base.py", line 1047, in _do_insert
+    return manager._insert(
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: ОШИБКА:  значение NULL в столбце "author_id" отношения "appnews_post" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (10, NW, 2023-05-10 14:17:43.318975+00, ssssssssssssssss, dddddddddddddddddd, 0, null, null, dddddddddddddddddd, null, ssssssssssssssss).
+
+[10/May/2023 17:19:06,346] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\serializers.py changed, reloading.]
+[10/May/2023 17:19:07,280] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 17:21:22,790] [ERROR] [log] [[35;1m[35;1mInternal Server Error: /api/news/[0m[0m]
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: ОШИБКА:  значение NULL в столбце "author_id" отношения "appnews_post" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (11, NW, 2023-05-10 14:21:22.742364+00, ssssssssssss, dddddddddddddd, 0, null, null, dddddddddddddd, null, ssssssssssss).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\modeltranslation\manager.py", line 388, in create
+    return super(MultilingualQuerySet, self).create(**kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\dev\Django_project_news\django_project_news\news\appnews\models.py", line 85, in save
+    super().save(*args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\base.py", line 812, in save
+    self.save_base(
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\base.py", line 863, in save_base
+    updated = self._save_table(
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\base.py", line 1006, in _save_table
+    results = self._do_insert(
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\base.py", line 1047, in _do_insert
+    return manager._insert(
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\dev\Django_project_news\django_project_news\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: ОШИБКА:  значение NULL в столбце "author_id" отношения "appnews_post" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (11, NW, 2023-05-10 14:21:22.742364+00, ssssssssssss, dddddddddddddd, 0, null, null, dddddddddddddd, null, ssssssssssss).
+
+[10/May/2023 17:23:20,144] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\serializers.py changed, reloading.]
+[10/May/2023 17:23:21,247] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 17:23:50,718] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\serializers.py changed, reloading.]
+[10/May/2023 17:23:51,678] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 17:55:57,162] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\news\settings.py changed, reloading.]
+[10/May/2023 17:55:58,553] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 17:56:06,978] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\news\settings.py changed, reloading.]
+[10/May/2023 17:56:08,242] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 17:59:12,092] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\news\settings.py changed, reloading.]
+[10/May/2023 17:59:13,110] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 18:00:31,043] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\news\settings.py changed, reloading.]
+[10/May/2023 18:00:32,002] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 18:06:28,724] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\news\settings.py changed, reloading.]
+[10/May/2023 18:06:29,770] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 18:09:04,380] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 18:21:36,793] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\news\urls.py changed, reloading.]
+[10/May/2023 18:21:37,776] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 18:22:08,219] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\news\urls.py changed, reloading.]
+[10/May/2023 18:22:09,262] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 18:23:48,452] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\news\urls.py changed, reloading.]
+[10/May/2023 18:23:49,667] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 18:24:24,857] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\news\urls.py changed, reloading.]
+[10/May/2023 18:24:25,874] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 18:26:01,216] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 18:28:56,937] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\news\urls.py changed, reloading.]
+[10/May/2023 18:28:58,037] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 18:30:26,038] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\views.py changed, reloading.]
+[10/May/2023 18:30:27,055] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 18:31:02,138] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\news\urls.py changed, reloading.]
+[10/May/2023 18:31:03,156] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 18:31:59,481] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\serializers.py changed, reloading.]
+[10/May/2023 18:32:00,637] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 18:35:34,815] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\serializers.py changed, reloading.]
+[10/May/2023 18:35:35,874] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 18:36:59,858] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\views.py changed, reloading.]
+[10/May/2023 18:37:01,235] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 18:38:06,313] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\serializers.py changed, reloading.]
+[10/May/2023 18:38:07,314] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 18:38:57,294] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\news\settings.py changed, reloading.]
+[10/May/2023 18:39:56,414] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 18:41:10,152] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\news\urls.py changed, reloading.]
+[10/May/2023 18:41:11,118] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 18:42:14,964] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\news\urls.py changed, reloading.]
+[10/May/2023 18:42:15,918] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 18:45:46,463] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\views.py changed, reloading.]
+[10/May/2023 18:45:47,623] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 18:47:56,392] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\news\urls.py changed, reloading.]
+[10/May/2023 18:47:57,359] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 18:48:21,062] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\news\urls.py changed, reloading.]
+[10/May/2023 18:48:22,132] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 18:48:45,881] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\news\urls.py changed, reloading.]
+[10/May/2023 18:48:46,824] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 18:49:15,997] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\news\urls.py changed, reloading.]
+[10/May/2023 18:49:16,937] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 18:49:29,829] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\news\urls.py changed, reloading.]
+[10/May/2023 18:49:30,823] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 18:55:41,105] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\news\urls.py changed, reloading.]
+[10/May/2023 18:55:42,126] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 18:55:54,522] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\news\urls.py changed, reloading.]
+[10/May/2023 18:55:55,487] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 18:56:43,614] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\news\urls.py changed, reloading.]
+[10/May/2023 18:56:44,793] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 19:00:04,233] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\news\urls.py changed, reloading.]
+[10/May/2023 19:00:05,270] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[10/May/2023 19:00:14,421] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\news\urls.py changed, reloading.]
+[10/May/2023 19:00:15,497] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[11/May/2023 14:45:58,182] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[11/May/2023 14:48:53,124] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[11/May/2023 15:04:18,232] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\news\urls.py changed, reloading.]
+[11/May/2023 15:04:19,145] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[11/May/2023 15:04:32,956] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\appnews\views.py changed, reloading.]
+[11/May/2023 15:04:33,953] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[11/May/2023 15:04:49,563] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\news\urls.py changed, reloading.]
+[11/May/2023 15:04:50,675] [INFO] [autoreload] [Watching for file changes with StatReloader]

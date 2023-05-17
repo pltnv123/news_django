@@ -14,7 +14,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 load_dotenv()
-env_path = Path('.')/'.env'
+env_path = Path('.') / '.env'
 load_dotenv(dotenv_path=env_path)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -35,7 +35,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'modeltranslation',
-    
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -55,6 +55,7 @@ INSTALLED_APPS = [
 
     'allauth.socialaccount.providers.yandex',
     'django_apscheduler',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -177,6 +178,7 @@ ACCOUNT_FORMS = {"signup": "accounts.forms.CustomSignupForm"}
 # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # проверка
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
 EMAIL_HOST = 'smtp.yandex.ru'
 EMAIL_PORT = 465
 EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER")
@@ -323,7 +325,6 @@ ADMINS = (
     ('anton', os.getenv('ADMIN_EMAIL')),
 )
 
-
 LOCALE_PATHS = [
     os.path.join(BASE_DIR, 'locale')
 ]
@@ -332,3 +333,14 @@ LANGUAGES = [
     ('en-us', 'English'),
     ('ru', 'Русский')
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticatedOrReadOnly',
+],
+# ограничения на все представления
+
+    'PAGE_SIZE': 10,
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+}
