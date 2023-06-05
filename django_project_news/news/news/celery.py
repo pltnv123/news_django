@@ -11,9 +11,9 @@ app.autodiscover_tasks()
 
 
 app.conf.beat_schedule = {
-    'print_every_5_seconds': {
+    'print_every_7_days': {
         'task': 'appnews.tasks.email_every_monday',
-        'schedule': crontab(day_of_week=1, hour=8, minute=0),
+        'schedule': crontab(day_of_week="monday", hour=0, minute=0),
 
     },
 }

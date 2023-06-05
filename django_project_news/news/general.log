@@ -8050,3 +8050,8 @@ DETAIL:  Ошибочная строка содержит (11, NW, 2023-05-10 14
 [11/May/2023 15:04:33,953] [INFO] [autoreload] [Watching for file changes with StatReloader]
 [11/May/2023 15:04:49,563] [INFO] [autoreload] [C:\dev\Django_project_news\django_project_news\news\news\urls.py changed, reloading.]
 [11/May/2023 15:04:50,675] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[17/May/2023 14:56:29,064] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[19/May/2023 14:21:54,850] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[20/May/2023 14:49:07,169] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[25/May/2023 17:11:18,677] [INFO] [autoreload] [Watching for file changes with StatReloader]
+[25/May/2023 20:21:09,652] [INFO] [autoreload] [Watching for file changes with StatReloader]

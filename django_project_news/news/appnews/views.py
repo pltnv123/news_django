@@ -77,12 +77,7 @@ class PostSearch(ListView):
     paginate_by = 10
 
     def get_queryset(self):
-        # Получаем обычный запрос
         queryset = super().get_queryset()
-        # Используем наш класс фильтрации.
-        # self.request.GET содержит объект QueryDict
-        # Сохраняем нашу фильтрацию в объекте класса,
-        # чтобы потом добавить в контекст и использовать в шаблоне.
         self.filterset = PostFilter(self.request.GET, queryset)
         return self.filterset.qs
 
@@ -100,6 +95,7 @@ class PostCreate(PermissionRequiredMixin, CreateView):
 
     def form_valid(self, form):
         form.instance.author = self.request.user.author
+        print(form.instance.author)
         return super().form_valid(form)
 
 

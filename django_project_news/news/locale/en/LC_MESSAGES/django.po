@@ -1,0 +1,269 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-03 14:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\accounts\forms.py:11
+msgid "player"
+msgstr ""
+
+#: .\accounts\forms.py:16
+msgid "Имя пользователя"
+msgstr "User name"
+
+#: .\accounts\forms.py:17
+msgid "Ваше имя"
+msgstr "Your name"
+
+#: .\accounts\forms.py:18
+msgid "Ваша фамилия"
+msgstr "Your last name"
+
+#: .\accounts\forms.py:19
+msgid "Email"
+msgstr ""
+
+#: .\accounts\forms.py:20
+msgid "Пароль"
+msgstr "Password"
+
+#: .\accounts\forms.py:21
+msgid "Повторите пароль"
+msgstr "Repeat the password"
+
+#: .\appnews\filters.py:12
+msgid "Дата"
+msgstr "Date"
+
+#: .\appnews\filters.py:21
+msgid "Тип поста:"
+msgstr "Type the Post"
+
+#: .\appnews\filters.py:29
+msgid "Категории:"
+msgstr "Categories"
+
+#: .\appnews\filters.py:41
+msgid "Поиск по постам:"
+msgstr "Search by posts"
+
+#: .\appnews\forms.py:20 .\templates\category_list.html:32
+#: .\templates\news.html:94 .\templates\post_search2.html:29
+msgid "Заголовок"
+msgstr "Heading"
+
+#: .\appnews\forms.py:21
+msgid "Текст"
+msgstr "Text"
+
+#: .\appnews\forms.py:22
+msgid "Тип категории"
+msgstr "Category name"
+
+#: .\appnews\forms.py:23
+msgid "Категория"
+msgstr "Category"
+
+#: .\appnews\forms.py:32
+msgid "Описание не должно быть идентично названию."
+msgstr "The description should not be identical to the name."
+
+#: .\appnews\forms.py:42
+msgid "Название должно начинаться с заглавной буквы"
+msgstr "The name must begin with a capital letter"
+
+#: .\appnews\models.py:11
+msgid "Рейтинг автора"
+msgstr "Author's rating"
+
+#: .\appnews\models.py:39
+msgid "Имя категории"
+msgstr "Category name"
+
+#: .\appnews\models.py:55 .\templates\post_search2.html:9
+msgid "Новость"
+msgstr "News"
+
+#: .\appnews\models.py:56
+msgid "Статья"
+msgstr "Article"
+
+#: .\appnews\models.py:61
+msgid "Название поста"
+msgstr "Title of the post"
+
+#: .\appnews\models.py:62
+msgid "Это текст поста"
+msgstr "Text of the post"
+
+#: .\appnews\models.py:63
+msgid "Рейтинг поста"
+msgstr "Post rating"
+
+#: .\appnews\models.py:89
+msgid "Пост"
+msgstr "Post"
+
+#: .\appnews\models.py:90 .\templates\post_search.html:9
+msgid "Посты"
+msgstr "Posts"
+
+#: .\templates\403.html:8
+msgid "Ошибка 403"
+msgstr "ERROR 403"
+
+#: .\templates\403.html:11
+msgid "Кажется, у Вас нет доступа к данной странице..."
+msgstr "It seems that you do not have access to this page..."
+
+#: .\templates\category_list.html:14 .\templates\news.html:72
+#: .\templates\news2.html:13
+msgid "Новостная лента"
+msgstr "News Feed"
+
+#: .\templates\category_list.html:14 .\templates\news.html:72
+#: .\templates\news2.html:13
+msgid "Всего:"
+msgstr "Total:"
+
+#: .\templates\category_list.html:18
+msgid "Подписаться"
+msgstr "Subscribe"
+
+#: .\templates\category_list.html:20
+msgid "Отписаться"
+msgstr "Unsubscribe"
+
+#: .\templates\category_list.html:25 .\templates\news.html:77
+msgid "Добавить Пост"
+msgstr "Add a Post"
+
+#: .\templates\category_list.html:33 .\templates\news.html:95
+#: .\templates\post_search2.html:30
+msgid "Дата публикации"
+msgstr "Date of publication"
+
+#: .\templates\category_list.html:34 .\templates\news.html:96
+#: .\templates\post_search2.html:31
+msgid "Описание"
+msgstr "Description"
+
+#: .\templates\category_list.html:35 .\templates\news.html:97
+msgid "Категории"
+msgstr "Categories"
+
+#: .\templates\category_list.html:39 .\templates\news.html:101
+msgid "Действия"
+msgstr "Actions"
+
+#: .\templates\category_list.html:63 .\templates\news.html:123
+msgid "Изменить"
+msgstr "To change"
+
+#: .\templates\category_list.html:66 .\templates\news.html:126
+#: .\templates\news2.html:33
+msgid "Удалить"
+msgstr "Delete"
+
+#: .\templates\category_list.html:77 .\templates\news.html:137
+msgid "Постов нет!"
+msgstr "There are no posts!"
+
+#: .\templates\category_list.html:97 .\templates\new.html:21
+#: .\templates\post_create.html:14 .\templates\post_delete.html:14
+#: .\templates\post_edit.html:15 .\templates\post_search.html:56
+#: .\templates\subscribe.html:5 .\templates\unsubscribe.html:5
+msgid "На главную!"
+msgstr "To the main page!"
+
+#: .\templates\news.html:32 .\templates\news.html:48
+msgid "Нажать"
+msgstr "Press"
+
+#: .\templates\news.html:60
+msgid "Поиск по постам"
+msgstr "Search by posts"
+
+#: .\templates\news.html:66
+msgid "Стать автором постов!"
+msgstr "Become the author of posts!"
+
+#: .\templates\news.html:82
+msgid "Вход"
+msgstr "Login"
+
+#: .\templates\news.html:83
+msgid "Регистрация"
+msgstr "Registration"
+
+#: .\templates\news.html:87
+msgid "Выход из профиля"
+msgstr "LogOut"
+
+#: .\templates\news2.html:17 .\templates\post_create.html:6
+msgid "Добавить пост"
+msgstr "Add a post"
+
+#: .\templates\news2.html:25
+msgid "Категория:"
+msgstr "Category"
+
+#: .\templates\news2.html:30
+msgid "Редактировать"
+msgstr "Edit"
+
+#: .\templates\news2.html:41 .\templates\post_search2.html:46
+msgid "Новостей нет!"
+msgstr "There is no news!"
+
+#: .\templates\post_create.html:11 .\templates\post_edit.html:12
+msgid "Добавить!"
+msgstr "Add"
+
+#: .\templates\post_created_email.html:11
+msgid ""
+"Здравствуй! Появилась новая <a href=\"{{ link }}\">статья</a> в твоем "
+"любимом разделе!"
+msgstr ""
+
+#: .\templates\post_delete.html:6
+msgid "Удаление товара"
+msgstr "Deleting an item"
+
+#: .\templates\post_delete.html:10
+msgid "Удаляем"
+msgstr "Delete"
+
+#: .\templates\post_edit.html:7
+msgid "Добавить пост:"
+msgstr "Add a post:"
+
+#: .\templates\post_search.html:21 .\templates\post_search2.html:15
+msgid "Поиск"
+msgstr "Search"
+
+#: .\templates\post_search.html:35
+msgid "Введите поиск!"
+msgstr "Enter the search!"
+
+#: .\templates\post_search2.html:22
+msgid "Найти"
+msgstr "To find"
+
+#~ msgid "Вид поста"
+#~ msgstr "Type of post"
